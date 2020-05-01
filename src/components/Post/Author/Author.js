@@ -9,16 +9,9 @@ const Author = () => {
 
   return (
     <div className={styles['author']}>
+      <h4 className={styles['author__name']}>{author.name}</h4>
       <p className={styles['author__bio']}>
         {author.bio}
-        <a
-          className={styles['author__bio-twitter']}
-          href={getContactHref('twitter', author.contacts.twitter)}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <strong>{author.name}</strong> on Twitter
-        </a>
       </p>
     </div>
   );
