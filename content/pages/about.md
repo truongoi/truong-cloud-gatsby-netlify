@@ -2,7 +2,7 @@
 template: page
 title: About me
 socialImage: /media/image-2.jpg
-slug: /pages/contacts
+slug: /pages/about
 draft: true
 ---
 I currently a freelancer Front‑end Engineer.
