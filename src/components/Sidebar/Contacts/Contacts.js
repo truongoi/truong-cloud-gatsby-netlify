@@ -29,4 +29,4 @@ const Contacts = ({ contacts }: Props) => (
   </div>
 );
 
-export default Contacts;
+export default React.memo(Contacts);

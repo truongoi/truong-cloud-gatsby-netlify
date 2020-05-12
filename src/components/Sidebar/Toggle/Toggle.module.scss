@@ -1,0 +1,33 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.Toggle {
+  width: 40px;
+  height: 44px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.Toggle div {
+  width: 90%;
+  height: 3px;
+  background-color: #000;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+@include breakpoint-sm {
+  .Toggle {
+      display: none;
+  }
+}

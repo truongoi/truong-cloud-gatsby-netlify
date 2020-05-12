@@ -37,4 +37,4 @@ const Author = ({ author, isIndex }: Props) => (
   </div>
 );
 
-export default Author;
+export default React.memo(Author);

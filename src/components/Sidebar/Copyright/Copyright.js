@@ -12,4 +12,4 @@ const Copyright = ({ copyright }: Props) => (
   </div>
 );
 
-export default Copyright;
+export default React.memo(Copyright);
