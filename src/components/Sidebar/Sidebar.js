@@ -27,8 +27,8 @@ const Sidebar = ({ isIndex }: Props) => {
         <Author author={author} isIndex={isIndex} />
         <Toggle clicked={toggleMenuHandler} isOpen={menuState}></Toggle>
         <Menu menu={menu} isOpen={menuState} />
-        <Contacts contacts={author.contacts} />
-        <Copyright copyright={copyright} />
+        <Contacts contacts={author.contacts} isOpen={menuState} />
+        <Copyright copyright={copyright} isOpen={menuState} />
       </div>
     </div>
   );

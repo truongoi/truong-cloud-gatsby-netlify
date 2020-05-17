@@ -3,11 +3,12 @@ import React from 'react';
 import styles from './Copyright.module.scss';
 
 type Props = {
-  copyright: string
+  copyright: string,
+  isOpen?: boolean
 };
 
-const Copyright = ({ copyright }: Props) => (
-  <div className={styles['copyright']}>
+const Copyright = ({ copyright, isOpen }: Props) => (
+  <div className={[styles['copyright'], isOpen ? styles['active'] : null].join(' ')}>
     {copyright}
   </div>
 );

@@ -8,10 +8,11 @@ type Props = {
   contacts: {
     [string]: string,
   },
+  isOpen?: boolean
 };
 
-const Contacts = ({ contacts }: Props) => (
-  <div className={styles['contacts']}>
+const Contacts = ({ contacts, isOpen }: Props) => (
+  <div className={[styles['contacts'], isOpen ? styles['active'] : null].join(' ')}>
     <ul className={styles['contacts__list']}>
       {Object.keys(contacts).map((name) => (!contacts[name] ? null : (
         <li className={styles['contacts__list-item']} key={name}>

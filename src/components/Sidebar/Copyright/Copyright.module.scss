@@ -2,6 +2,17 @@
 @import '../../../assets/scss/mixins';
 
 .copyright {
+  display: none;
   color: lighten($color-gray, 18%);
   font-size: $typographic-small-font-size;
+}
+
+.active {
+  display: block;
+}
+
+@include breakpoint-sm {
+  .copyright {
+    display: block;
+  }
 }
